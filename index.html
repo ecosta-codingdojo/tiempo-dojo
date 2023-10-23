@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ecosta@codingdojo.la">
+    <title>DojoWeather</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <h1>DojoWeather</h1>
+            <ul>
+                <li><a href="#" onclick="cargarReporte()">Burbank</a></li>
+                <li><a href="#" onclick="cargarReporte()">Chicago</a></li>
+                <li><a href="#" onclick="cargarReporte()">Dallas</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Barra con formulario -->
+            <div class="top">
+                <h2>San Jose</h2>
+                <form action="/" method="post">
+                    <label>show temperatures in</label>
+                    <select onchange="convertirTemperatura(this)">
+                        <option value="celsius">ºC</option>
+                        <option value="fahrenheit">ºF</option>
+                    </select>
+                </form>
+            </div>
+
+            <!-- Tarjetas con climas -->
+            <div class="tarjetas">
+                <!-- Tarjeta 1 -->
+                <div class="tarjeta">
+                    <h3>Today</h3>
+                    <img src="static/images/some_rain.png" alt="some rain">
+                    <p>some rain</p>
+                    <div class="temperaturas">
+                        <p class="temperatura-max"><span id="temperatura1">24</span>º</p>
+                        <p class="temperatura-min"><span id="temperatura2">18</span>º</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="tarjeta">
+                    <h3>Tomorrow</h3>
+                    <img src="static/images/some_sun.png" alt="some rain">
+                    <p>some sun</p>
+                    <div class="temperaturas">
+                        <p class="temperatura-max"><span id="temperatura3">27</span>º</p>
+                        <p class="temperatura-min"><span id="temperatura4">19</span>º</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="tarjeta">
+                    <h3>Friday</h3>
+                    <img src="static/images/some_clouds.png" alt="some rain">
+                    <p>some rain</p>
+                    <div class="temperaturas">
+                        <p class="temperatura-max"><span id="temperatura5">21</span>º</p>
+                        <p class="temperatura-min"><span id="temperatura6">16</span>º</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="tarjeta">
+                    <h3>Saturday</h3>
+                    <img src="static/images/some_sun.png" alt="some rain">
+                    <p>some sun</p>
+                    <div class="temperaturas">
+                        <p class="temperatura-max"><span id="temperatura7">26</span>º</p>
+                        <p class="temperatura-min"><span id="temperatura8">21</span>º</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cookie" id="bloque-cookie">
+                <img src="static/images/cookie.png" alt="cookie">
+                <div class="cookie-texto">
+                    <h3>Stop! Cookie time</h3>
+                    <p>
+                        We use cookies (sadly not the edible ones) to personalize content and ads, to provide social
+                        media features and to analyze our site traffic. <a href="#">Read more...</a>
+                    </p>
+                </div>
+                <button class="btn-cookie" onclick="aceptarCookie()">I Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>

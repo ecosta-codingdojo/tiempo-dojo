@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: lightskyblue;
+}
+
+.navbar-container,
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar-container h1 {
+    color: white;
+    font-size: 38px;
+}
+
+.navbar-container ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-container li {
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 2px solid black;
+}
+
+.top h2 {
+    font-size: 28px;
+}
+
+.top label {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    background-color: lightgray;
+    padding: 30px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+/* "last-child" es para que el último elemento no tenga margen derecho */
+.tarjeta:last-child {
+    margin-right: 0;
+}
+
+.tarjeta h3 {
+    font-size: 24px;
+}
+
+.tarjeta img {
+    border-radius: 50%;
+    width: 150px;
+    margin: 20px 0;
+}
+
+.tarjeta p {
+    font-size: 20px;
+}
+
+.temperaturas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.temperaturas p {
+    font-size: 22px;
+}
+
+.temperatura-max {
+    color: red;
+}
+
+.temperatura-min {
+    color: blue;
+}
+
+.cookie {
+    background-color: whitesmoke;
+    border: 3px solid black;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-texto {
+    margin: 0 30px;
+}
+
+.cookie-texto h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.cookie-texto p {
+    font-size: 18px;
+}
+
+.btn-cookie {
+    width: 150px;
+    font-size: 18px;
+    padding: 5px 0;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+    background-color: skyblue;
+    cursor: pointer;
+}
